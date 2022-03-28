@@ -23,6 +23,8 @@ vannak1
 
     * override update
     > git reset --hard origin/main
+    * rebers
+    > git rebase (--continue | --abort | --skip)
 6  git status
     > git status
     - working tree clean : nothing commit or update
