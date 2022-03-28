@@ -11,10 +11,11 @@ vannak
     npm install
    ## npm run div
 
-
+==========================================
 5. update repo
     > git fetch --all
     > git pull
+    > git pull --rebase
 
     ////
     click git click check
