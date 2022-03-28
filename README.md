@@ -10,6 +10,8 @@
 4. run project
     npm install
    ## npm run div
+
+
 5. update repo
     > git fetch --all
     > git pull
@@ -17,6 +19,9 @@
     ////
     click git click check
     > git push -u origin main
+
+    * override update
+    > git reset --hard origin/main
 6  git status
     > git status
     - working tree clean : nothing commit or update
