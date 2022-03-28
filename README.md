@@ -15,3 +15,6 @@
     ////
     click git click check
     > git push -u origin main
+6  git status
+    > git status
+    - working tree clean : nothing commit or update
