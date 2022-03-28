@@ -5,5 +5,13 @@
 3. like for connect to git hib 
     ## https://gist.github.com/DakotaLMartinez/baa81e7f00fa8eb68d9dbcab69f5b762
 
-4. run project 
+4. run project
+    npm install
    ## npm run div
+5. update repo
+    > git fetch --all
+    > git pull
+
+    ////
+    click git click check
+    > git push -u origin main
