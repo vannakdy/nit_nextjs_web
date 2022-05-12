@@ -4,6 +4,7 @@ function MyApp({ Component, pageProps }) {
   return(
     <div>
        <Head>
+       {/* <link rel="icon" type="image/ico" href={'https://zandokh.net/image/catalog/logo/ten11icon.jpg'} /> */}
        <link
           href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap"
           rel="stylesheet"
