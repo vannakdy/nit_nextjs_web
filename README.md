@@ -26,6 +26,7 @@ BBBBB
     ////
     click git click check
     > git push -u origin main
+    > git push --force origin main 
 
     * override update
     > git reset --hard origin/main
