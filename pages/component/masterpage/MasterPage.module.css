@@ -1,0 +1,24 @@
+
+.header  {
+    display: flex;
+    position: sticky;
+    top: 0;
+    /* position: -webkit-sticky ; */
+    padding: 15px 5%;
+    background-color: aliceblue;
+}
+.body  {
+    margin: 10px 5%;
+    /* background-color: aliceblue; */
+    padding: 10px;
+    height: 100vh;
+}
+.contain_logo{
+    display: flex;
+    align-items: flex-end;
+}
+.text_brandname{
+    margin-left: 10px;
+    font-size: 28px;
+    font-weight: 500;
+}
