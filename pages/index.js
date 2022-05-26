@@ -11,7 +11,9 @@ export default function Home() {
         {data.items.map((item,index)=>{
           var {resourceId,title} = item.snippet
           return (
-            <div>
+            <div
+              key={index}
+            >
               <h1>{title}</h1>
               <iframe
                 key={index}
