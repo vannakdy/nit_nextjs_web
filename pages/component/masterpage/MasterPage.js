@@ -6,7 +6,7 @@ const MasterPage = (props) => {
         <div>
             <div className={style.header}>
                 <div className={style.contain_logo}>
-                    <div style={{width:60,height:60,borderRadius:"100px",overflow: 'hidden'}}>
+                    <div style={{width:30,height:30,borderRadius:"100px",overflow: 'hidden'}}>
                         <Image 
                             src={require("../../assets/logo/INT_LOGO.png")} 
                             alt="NIT Cambodai"

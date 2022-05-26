@@ -6,6 +6,9 @@ CCCC
 CCCC
 BBBBB
 BBBBB
+
+1. git pull -ff-only // full file that not complex
+2. git push --force // overide commit
 1. clone project 
     git clone git@github.com:vannakdy/nit_nextjs_web.git
 2. push project 
