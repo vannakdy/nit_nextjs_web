@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import ImageCart from './component/cart/ImageCart';
 import MasterPage from './component/masterpage/MasterPage';
 import {data} from "../components/data_tmp/list_playlist"
+import Footer from '../components/Footer/Footer';
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -11,7 +12,7 @@ export default function Home() {
         {data.items.map((item,index)=>{
           var {resourceId,title} = item.snippet
           return (
-            <div
+            <div className={styles.header}
               key={index}
             >
               <h1>{title}</h1>
@@ -28,9 +29,7 @@ export default function Home() {
             </div>
           )
         })}
-       
-
-
+        <Footer />
       </MasterPage>
     </div>
   )

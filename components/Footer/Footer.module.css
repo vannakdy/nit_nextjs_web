@@ -1,0 +1,13 @@
+.Footer{
+    display: flex;
+    position: sticky;
+    top: 0;
+    bottom:0;
+    background-color: black;
+}
+.headerFooter{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}

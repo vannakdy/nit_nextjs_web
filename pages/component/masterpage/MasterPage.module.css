@@ -8,7 +8,8 @@
     background-color: aliceblue;
 }
 .body  {
-    margin: 10px 5%;
+    /* margin: 10px 5%; */
+    margin: 10px 0px;
     /* background-color: aliceblue; */
     padding: 10px;
     height: 100vh;
