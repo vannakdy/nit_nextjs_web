@@ -5,7 +5,13 @@ import ImageCart from './component/cart/ImageCart';
 import MasterPage from './component/masterpage/MasterPage';
 import {data} from "../components/data_tmp/list_playlist"
 import Footer from '../components/Footer/Footer';
+import Link from 'next/link';
+import { useRouter } from 'next/router'
 export default function Home() {
+  const router = useRouter()
+  const handleClick=(e, path)=>{
+    router.push(path)
+  }
   return (
     <div className={styles.container}>
       <MasterPage>
@@ -15,7 +21,11 @@ export default function Home() {
             <div className={styles.header}
               key={index}
             >
-              <h1>{title}</h1>
+              <Link href={''}>
+                <a onClick={(e) => handleClick(e, "/Menu")}>
+                  <h1 className={styles.LikePage}>{title}</h1>
+                </a>
+              </Link>
               <iframe
                 key={index}
                 width="500"
