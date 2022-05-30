@@ -6,6 +6,7 @@ import MasterPage from './component/masterpage/MasterPage';
 import {data} from "../components/data_tmp/list_playlist"
 import Footer from '../components/Footer/Footer';
 import Link from 'next/link';
+import 'antd/dist/antd.css';
 import { useRouter } from 'next/router'
 export default function Home() {
   const router = useRouter()

@@ -121,3 +121,29 @@
   width: 50%;
   cursor: pointer;
 }
+.Drawer{
+  width: 20%;
+  height: 500px;
+  padding-top: 10px;
+  display: flex;
+  border-right-width: 1px;
+  border-right-color: black;
+  border-right-style: solid;
+  border-top-width: 1px;
+  border-top-color: black;
+  border-top-style: solid;
+  background-color:grey;
+}
+.DrawerClos{
+  width: 5%;
+  height: 500px;
+  padding-top: 10px;
+  display: flex;
+  border-right-width: 1px;
+  border-right-color: black;
+  border-right-style: solid;
+  border-top-width: 1px;
+  border-top-color: black;
+  border-top-style: solid;
+  background-color: grey;
+}
