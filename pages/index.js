@@ -22,7 +22,7 @@ export default function Home() {
               key={index}
             >
               <Link href={''}>
-                <a onClick={(e) => handleClick(e, "/about")}>
+                <a onClick={(e) => handleClick(e, "/product_list")}>
                   <h1 className={styles.LikePage}>{title}</h1>
                 </a>
               </Link>
