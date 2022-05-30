@@ -26,6 +26,22 @@ function product_list(props) {
                     <a onClick={handleOpen}>
                         {iconOpen ? <AiOutlineAppstore style={{fontSize:30}}/> : <AiOutlineAppstoreAdd style={{fontSize:30}}/>}
                     </a>
+                    {iconOpen && 
+                    <div className={styles.headerList}>
+                        <h3>មេរៀនទី១</h3>
+                        <div  className={styles.headerview}>
+                            <p>we are teach you about website</p>
+                        </div>
+                        <h3>មេរៀនទី២</h3>
+                        <div className={styles.headerview}>
+                            <p>we are teach you about website</p>
+                        </div>
+                        <h3>មេរៀនទី៣</h3>
+                        <div className={styles.headerview}>
+                            <p>we are teach you about website</p>
+                        </div>
+                    </div>
+                    }
                 </div>
             </MasterPage>
         </div>

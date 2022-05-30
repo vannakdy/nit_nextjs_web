@@ -135,7 +135,7 @@
   background-color:grey;
 }
 .DrawerClos{
-  width: 5%;
+  width: 3%;
   height: 500px;
   padding-top: 10px;
   display: flex;
@@ -146,4 +146,14 @@
   border-top-color: black;
   border-top-style: solid;
   background-color: grey;
+}
+.headerList{
+  padding: 30px 5px;
+}
+.headerview{
+  padding-left: 10px;
+}
+.headerview:hover{
+  cursor: pointer;
+  background-color: blanchedalmond;
 }
