@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { AiOutlineAppstoreAdd, AiOutlineAppstore } from "react-icons/ai";
 import MasterPage from './component/masterpage/MasterPage';
 import styles from '../styles/Home.module.css';
-import { Menu, Button } from 'antd';
+import { Menu, Button, Row, Col } from 'antd';
 import 'antd/dist/antd.css';
 
 import {
@@ -50,13 +50,21 @@ function product_list(props) {
         setCollapsed(!collapsed);
     };
     const [state, setState] = useState({
-        iconOpen: true
+        iconOpen: true,
+        news: false
     })
-    const { iconOpen } = state;
+    const { iconOpen,news } = state;
     const handleOpen = () => {
         setState({
             ...state,
             iconOpen: !iconOpen
+        })
+    }
+    const data = [{ title: 'អត្ថបទ',news:true }, { title: 'ព័ត៌មាន',news:false }, { title: 'បង្ហាញ',news:false }];
+    const handelNews=()=>{
+        setState({
+            ...state,
+            news: true
         })
     }
     return (
@@ -66,29 +74,49 @@ function product_list(props) {
                 <meta property="og:title" content="My page" key="title" />
             </Head>
             <MasterPage>
-                <h3>ព័ត៌មានថ្មី</h3>
-                <div
-                    style={{
-                        width: 256,
-                    }}
-                >
-                    <Button
-                        type="primary"
-                        onClick={toggleCollapsed}
-                        style={{
-                            marginBottom: 16,
-                        }}
-                    >
-                        {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-                    </Button>
-                    <Menu
-                        defaultSelectedKeys={['1']}
-                        defaultOpenKeys={['sub1']}
-                        mode="inline"
-                        theme="dark"
-                        inlineCollapsed={collapsed}
-                        items={items}
-                    />
+                <div className={styles.contener}>
+                    <div style={{ width: '25%' }}>
+                        <div>
+                            <a style={{ fontSize: 19, fontWeight: 'bold' }} onClick={toggleCollapsed}>ព័ត៌មានថ្មី</a>
+                        </div>
+                        <div
+                            style={{
+                                width: 256,
+                            }}
+                        >
+                            <Menu
+                                defaultSelectedKeys={['1']}
+                                defaultOpenKeys={['sub1']}
+                                mode="inline"
+                                theme="dark"
+                                onClick={toggleCollapsed}
+                                inlineCollapsed={collapsed}
+                                items={items}
+                            />
+                        </div>
+                    </div>
+                    <div style={{ width: '100%' }}>
+                        <div>
+                            <div className={styles.ConternHead}>
+                                <Row>
+                                    {data.map((item, i) => {
+                                        return (
+                                            <Col key={i}>
+                                                <div className={styles.headerButton} onClick={handelNews}>
+                                                    <Button>{item.title}</Button>
+                                                </div>
+                                            </Col>
+                                        )
+                                    })}
+                                </Row>
+                            </div>
+                            {news &&
+                                <div style={{background:'green',height:250}}>
+                                    <h1>dfdf</h1>
+                                </div>
+                            }
+                        </div>
+                    </div>
                 </div>
             </MasterPage>
         </div>

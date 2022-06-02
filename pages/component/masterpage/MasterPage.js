@@ -14,12 +14,7 @@ const MasterPage = (props) => {
     return (
         <div>
             <div className={style.header}>
-                <Link href={''}>
-                    <a onClick={(e) => handlBack(e, '/')}>
-                        <BsArrowLeft style={{ fontSize: 30, justifyContent: 'center', display: 'flex', paddingRight: 5 }} />
-                    </a>
-                </Link>
-                <div className={style.contain_logo}>
+                <div className={style.contain_logo} onClick={(e)=>handlBack(e,'/')}>
                     <div style={{ width: 30, height: 30, borderRadius: "100px", overflow: 'hidden' }}>
                         <Image
                             src={require("../../assets/logo/INT_LOGO.png")}
