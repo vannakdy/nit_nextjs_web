@@ -43,6 +43,8 @@ const items = [
         getItem('Submenu', 'sub3', null, [getItem('Option 11', '11'), getItem('Option 12', '12')]),
     ]),
 ];
+const data = [{ title: 'អត្ថបទ', news: 'Article' }, { title: 'ព័ត៌មាន', news: 'News' }, { title: 'បង្ហាញ', news: 'ShowList' }];
+
 function product_list(props) {
     const [collapsed, setCollapsed] = useState(false);
 
@@ -51,26 +53,49 @@ function product_list(props) {
     };
     const [state, setState] = useState({
         iconOpen: true,
-        news: false
+        news: false,
+        ListData:[],
+        DataNews: [
+            {   
+                name:'Article',
+                List: 'Angkor Wat in Siem Reap, Cambodia is the largest religious monument in the world. Angkor Wat, translated from Khmer (the official language of Cambodia) literally means “City Temple.” As far as names go this is as generic as it gets. Angkor Wat was not the original name given to the temple when it was built in the 12th century. We have little knowledge of how this temple was referred to during the time of its use, as there are no extant texts or inscriptions that mention the temple by name—this is quite incredible if we consider the fact that Angkor Wat is the greatest religious construction project in Southeast Asia.'
+            },
+            {   
+                name:'News',
+                List: 'A possible reason why the temple’s original name may have never been documented is that it was such an important and famous monument that there was no need to refer to it by its name. We have several references to the king who built the temple, King Suryavarman II (1113-1145/50 C.E.), and events that took place at the temple, but no mention of its name.'
+            },
+            {
+                name:'ShowList',
+                List: 'Angkor Wat is dedicated to the Hindu god Vishnu who is one of the three principal gods in the Hindu pantheon (Shiva and Brahma are the others). Among them he is known as the “Protector.” The major patron of Angkor Wat was King Suryavarman II, whose name translates as the “protector of the sun.” Many scholars believe that Angkor Wat was not only a temple dedicated to Vishnu but that it was also intended to serve as the king’s mausoleum in death.'
+            }
+        ]
     })
-    const { iconOpen,news } = state;
+    const { iconOpen, news,ListData,DataNews} = state;
     const handleOpen = () => {
         setState({
             ...state,
             iconOpen: !iconOpen
         })
-    }
-    const data = [{ title: 'អត្ថបទ',news:true }, { title: 'ព័ត៌មាន',news:false }, { title: 'បង្ហាញ',news:false }];
-    const handelNews=()=>{
+    }   
+    const handelNews = (e) => {
+         var data = DataNews,Array=[];
+         data.map((item,_)=>{
+            if(item.name == e){
+                Array.push(item.List)
+            }
+        })
         setState({
             ...state,
-            news: true
+            news: true,
+            ListData: Array
         })
+       
     }
+   
     return (
         <div>
             <Head>
-                <title>Product</title>
+                <title>NIT</title>
                 <meta property="og:title" content="My page" key="title" />
             </Head>
             <MasterPage>
@@ -102,7 +127,7 @@ function product_list(props) {
                                     {data.map((item, i) => {
                                         return (
                                             <Col key={i}>
-                                                <div className={styles.headerButton} onClick={handelNews}>
+                                                <div className={styles.headerButton} onClick={()=>handelNews(item.news)}>
                                                     <Button>{item.title}</Button>
                                                 </div>
                                             </Col>
@@ -111,8 +136,14 @@ function product_list(props) {
                                 </Row>
                             </div>
                             {news &&
-                                <div style={{background:'green',height:250}}>
-                                    <h1>dfdf</h1>
+                                <div className={styles.Contenr_News}>
+                                    {ListData && ListData.map((item,i)=>{
+                                        return(
+                                            <div key={i}>
+                                                <span>{item}</span>
+                                            </div>
+                                        )
+                                    })}
                                 </div>
                             }
                         </div>

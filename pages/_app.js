@@ -4,7 +4,7 @@ function MyApp({ Component, pageProps }) {
   return(
     <div>
        <Head>
-         <title>Home Page</title>
+         <title>NIT</title>
        <link
           href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap"
           rel="stylesheet"
