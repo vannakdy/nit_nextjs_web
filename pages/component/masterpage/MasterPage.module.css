@@ -16,6 +16,7 @@
 }
 .contain_logo{
     display: flex;
+    cursor: pointer;
     align-items: flex-end;
 }
 .text_brandname{

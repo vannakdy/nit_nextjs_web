@@ -1,3 +1,10 @@
 .headr{
     padding: 0rem 1rem;
 }
+.HeadeView{
+    padding: 10px 0px;
+    overflow: auto;
+    display: flex;
+    will-change: scroll-position;
+
+}

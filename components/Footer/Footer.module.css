@@ -1,13 +1,24 @@
 .Footer{
-    display: flex;
+    /* display: flex; */
+    padding: 10px 10px;
     position: sticky;
     top: 0;
     bottom:0;
-    background-color: black;
+    background-color: rgb(238, 231, 231);
 }
 .headerFooter{
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: center;
+}
+.Col{
+    align-items: end;
+    justify-content: end;
+    display: flex !important;
+}
+.BottomFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

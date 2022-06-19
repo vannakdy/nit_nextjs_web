@@ -8,6 +8,12 @@ import Footer from '../components/Footer/Footer';
 import Link from 'next/link';
 import 'antd/dist/antd.css';
 import { useRouter } from 'next/router'
+import { Row,Col} from 'antd';
+import Slider from './component/Slider/Slider';
+import MenuHeader from '../components/Menu/MenuHeader';
+import Header from '../components/Header';
+import ContenHeader from '../components/ContenHead/ContenHeader'
+
 export default function Home() {
   const router = useRouter()
   const handleClick=(e, path)=>{
@@ -16,7 +22,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <MasterPage>
-        {data.items.map((item,index)=>{
+        {/* {data.items.map((item,index)=>{
           var {resourceId,title} = item.snippet
           return (
             <div className={styles.header}
@@ -39,7 +45,23 @@ export default function Home() {
               />
             </div>
           )
-        })}
+        })} */}
+        <Row>
+          <Col span={18} >
+            <div>
+              <Slider />
+              <div>
+                <Header />
+                <ContenHeader />
+              </div>
+            </div>
+          </Col>
+          <Col span={6} className={styles.Menu}>
+           <div>
+            <MenuHeader/>
+           </div>
+          </Col>
+        </Row>
         <Footer />
       </MasterPage>
     </div>

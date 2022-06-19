@@ -2,3 +2,23 @@
     align-items: flex-end;
     margin: auto;
 }
+.contener{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ConternHead{
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.headerButton >Button:hover{
+    color: white;
+    background-color: rgba(10, 1, 9, 0.978);
+}
+.Contenr_News{
+    padding: 10px;
+    border: 1px solid #000;
+  }
