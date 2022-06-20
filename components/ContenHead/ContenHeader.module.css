@@ -38,3 +38,14 @@
     width: 450px;
     background-color: aqua;
 }
+.titleImge{
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    justify-content: center;
+}
+.titleImge > span{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
