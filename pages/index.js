@@ -47,17 +47,17 @@ export default function Home() {
           )
         })} */}
         <Row>
-          <Col span={18} >
+          <Col span={19} className={styles.grid_left}>
             <div>
               <Slider />
-              <div>
+              <div style={{paddingTop:30}}>
                 <Header />
                 <ContenHeader />
               </div>
             </div>
           </Col>
-          <Col span={6} className={styles.Menu}>
-           <div>
+          <Col span={5} className={styles.grid_right}>
+           <div >
             <MenuHeader/>
            </div>
           </Col>

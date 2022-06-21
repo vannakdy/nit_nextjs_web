@@ -120,11 +120,11 @@ const ContenHeader = (props) => {
                     <Card.Grid hoverable={false} style={gridStyle}>
                     Content
                     </Card.Grid>
-                    <Card.Grid style={gridStyle}>Content</Card.Grid>
-                    <Card.Grid style={gridStyle}>Content</Card.Grid>
-                    <Card.Grid style={gridStyle}>Content</Card.Grid>
-                    <Card.Grid style={gridStyle}>Content</Card.Grid>
-                    <Card.Grid style={gridStyle}>Content</Card.Grid>
+                    <Card.Grid style={gridStyle} hoverable={false}>Content</Card.Grid>
+                    <Card.Grid style={gridStyle} hoverable={false}>Content</Card.Grid>
+                    <Card.Grid style={gridStyle} hoverable={false}>Content</Card.Grid>
+                    <Card.Grid style={gridStyle} hoverable={false}>Content</Card.Grid>
+                    <Card.Grid style={gridStyle} hoverable={false}>Content</Card.Grid>
                 </Card>
             </div>
         </div>

@@ -9,7 +9,7 @@ const Slider = (props) => {
             <Carousel autoplay>
                 <div className={styles.Image}>
                     <Image
-                        src={require("../../assets/logo/INT_LOGO.png")}
+                        src={require("../../assets/logo/angkor.png")}
                         alt="NIT Cambodai"
                     />
                 </div>
@@ -21,7 +21,7 @@ const Slider = (props) => {
                 </div>
                 <div className={styles.Image}>
                     <Image
-                        src={require("../../assets/logo/INT_LOGO.png")}
+                        src={require("../../assets/logo/tokta.png")}
                         alt="NIT Cambodai"
                     />
                 </div>
