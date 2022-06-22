@@ -22,30 +22,6 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <MasterPage>
-        {/* {data.items.map((item,index)=>{
-          var {resourceId,title} = item.snippet
-          return (
-            <div className={styles.header}
-              key={index}
-            >
-              <Link href={''}>
-                <a onClick={(e) => handleClick(e, "/product_list")}>
-                  <h1 className={styles.LikePage}>{title}</h1>
-                </a>
-              </Link>
-              <iframe
-                key={index}
-                width="500"
-                height="280"
-                src={`https://www.youtube.com/embed/${resourceId.videoId}`}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="Embedded youtube"
-              />
-            </div>
-          )
-        })} */}
         <Row>
           <Col span={19} className={styles.grid_left}>
             <div>

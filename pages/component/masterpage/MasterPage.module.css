@@ -2,11 +2,13 @@
 .header  {
     display: flex;
     z-index: 10;
-    
     position: sticky;
     top: 0;
+    bottom: 0;
     /* position: -webkit-sticky ; */
     padding: 15px 5%;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: aliceblue;
 }
 .body  {
@@ -25,4 +27,16 @@
     margin-left: 10px;
     font-size: 22px;
     font-weight: 500;
+}
+.MenuRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Setting{
+    cursor: pointer;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
 }

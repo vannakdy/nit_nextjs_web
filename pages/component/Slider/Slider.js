@@ -15,19 +15,19 @@ const Slider = (props) => {
                 </div>
                 <div className={styles.Image}>
                     <Image
-                        src={require("../../assets/logo/INT_LOGO.png")}
-                        alt="NIT Cambodai"
-                    />
-                </div>
-                <div className={styles.Image}>
-                    <Image
                         src={require("../../assets/logo/tokta.png")}
                         alt="NIT Cambodai"
                     />
                 </div>
                 <div className={styles.Image}>
                     <Image
-                        src={require("../../assets/logo/INT_LOGO.png")}
+                        src={require("../../assets/logo/Screenshot (112).png")}
+                        alt="NIT Cambodai"
+                    />
+                </div>
+                <div className={styles.Image}>
+                    <Image
+                        src={require("../../assets/logo/Screenshot (121).png")}
                         alt="NIT Cambodai"
                     />
                 </div>
