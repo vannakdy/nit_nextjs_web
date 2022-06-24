@@ -18,7 +18,7 @@ BBBBB
 
 4. run project
     npm install
-   ## npm run div
+   ## npm run dev
 
 ==========================================
 5. update repo

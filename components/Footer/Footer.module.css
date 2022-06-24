@@ -18,7 +18,20 @@
     display: flex !important;
 }
 .BottomFooter{
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.BottomFooter > span{
+    font-size: 13px;
+}
+.BottomFooter > span:hover{
+    font-size: 15px;
+    color: red;
+}
+.ViewStora{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
