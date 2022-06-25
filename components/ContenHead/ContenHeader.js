@@ -76,7 +76,7 @@ const ContenHeader = (props) => {
                             <div className={Styles.titleImge}>
                                 <span>Story</span>
                             </div>
-                            <div>
+                            <div  className={Styles.titleImge}>
                                 <Image
                                     width={200}
                                     height={200}
@@ -89,7 +89,7 @@ const ContenHeader = (props) => {
                             <div className={Styles.titleImge}>
                                 <span>Story</span>
                             </div>
-                            <div>
+                            <div  className={Styles.titleImge}>
                                 <Image
                                     width={200}
                                     height={200}
@@ -102,7 +102,7 @@ const ContenHeader = (props) => {
                             <div className={Styles.titleImge}>
                                 <span>Story</span>
                             </div>
-                            <div>
+                            <div  className={Styles.titleImge}>
                                 <Image
                                     width={200}
                                     height={200}

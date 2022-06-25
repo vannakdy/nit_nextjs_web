@@ -22,7 +22,9 @@ const Footer = (props) => {
                     <div>
                         <p style={{fontSize:15,color:"#000"}}>7176 Blue Spring Lane Santa</p>
                         <p style={{fontSize:15,color:"#000"}}>Monica, Ca 90403</p>
-                        <span style={{fontSize:15,color:"#000"}}>855+ 964559121</span>
+                        <div className={styles.ViewSpace}></div>
+                        <p style={{fontSize:15,color:"#000"}}>DyVannak@gmail</p>
+                        <p style={{fontSize:15,color:"#000"}}>855+ 964559121</p>
                     </div>
                 </Col>
                 <Col span={4} className={styles.ViewStora}>
@@ -43,22 +45,21 @@ const Footer = (props) => {
                         <p style={{fontSize:15,color:"#000"}}>Logout</p>
                     </div>
                 </Col>
-                <Col span={8} className={styles.Col}>
+                <Col span={8} className={styles.ViewStora}>
                     <div>
                         <p style={{fontSize:15,color:"#000"}}>Subscribe to out newsletter and get 10% of your first purchase</p>
-                        <Search
-                            placeholder="Your email "
-                            allowClear
-                            onSearch={onSearch}
-                            style={{
-                                width: 200,
-                            }}
-                        />
-                        <div>
-                            {/* <Image
-                                src={require("../../../assets/logo/payment.png")}
-                            /> */}
-                            <span>image</span>
+                       <div className={styles.ViewSearch}>
+                            <Search
+                                placeholder="Your email "
+                                allowClear
+                                onSearch={onSearch}
+                            />
+                       </div>
+                        <div className={styles.ViewCart}>
+                            <Image
+                                src={require("../../pages/assets/logo/payment.png")}
+                               
+                            />
                         </div>
                     </div>
                 </Col>

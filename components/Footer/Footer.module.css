@@ -33,5 +33,15 @@
 .ViewStora{
     display: flex;
     align-items: center;
+    padding: 0rem 1rem;
     justify-content: center;
+}
+.ViewSpace{
+    padding: 0.5rem 0rem;
+}
+.ViewSearch{
+    padding-top: 1rem;
+}
+.ViewCart{
+   padding-top: 3rem;
 }
