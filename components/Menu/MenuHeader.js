@@ -51,9 +51,6 @@ const MenuHeader = (props) => {
       mode="inline"
       openKeys={openKeys}
       onOpenChange={onOpenChange}
-      style={{
-        width: 256,
-      }}
       items={items}
     />
   );
